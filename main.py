@@ -34,7 +34,7 @@ crossover_rate = 0.7
 mutation_rate = 0.05
 good = []
 bad = []
-threshold = popN // 3
+threshold = popN // 5
 LOG_DIR = 'C:\\Users\\akash\\Desktop\\tensorboard\\'
 
 """Generates random population of chromos"""
@@ -250,24 +250,38 @@ def embedHypotheses():
 			if(len(protein) > maxG):
 				maxG = len(protein)
 			f.write(protein + '\n')
-	embedding_var = tf.Variable(tf.truncated_normal([good_length, 2]), name='embedding')
+
+	with open(LOG_DIR + 'bad.csv', 'w') as f:
+		for item in bad:
+			protein = item[1]
+			if(len(protein) > maxG):
+				maxG = len(protein)
+			f.write(protein + '\n')
+	embedding_var_good = tf.Variable(tf.truncated_normal([good_length, 2]), name='embedding_good')
+	embedding_var_bad = tf.Variable(tf.truncated_normal([bad_length, 2]), name='embedding_bad')
 	with tf.Session() as sess:
 		# Create summary writer.
 		writer = tf.summary.FileWriter(LOG_DIR, sess.graph)
 		# Initialize embedding_var
-		sess.run(embedding_var.initializer)
+		sess.run(embedding_var_good.initializer)
+		sess.run(embedding_var_bad.initializer)
 		# Create Projector config
-		config = projector.ProjectorConfig()
+		config_good = projector.ProjectorConfig()
+		config_bad = projector.ProjectorConfig()
 		# Add embedding visualizer
-		embedding = config.embeddings.add()
+		embedding_good = config_good.embeddings.add()
+		embedding_bad = config_bad.embeddings.add()
 		# Attache the name 'embedding'
-		embedding.tensor_name = embedding_var.name
+		embedding_good.tensor_name = 'embedding_good'
+		embedding_bad.tensor_name = 'embedding_bad'
 		# Metafile which is described later
-		embedding.metadata_path = LOG_DIR + 'good.csv'
+		embedding_good.metadata_path = LOG_DIR + 'good.csv'
+		embedding_bad.metadata_path = LOG_DIR + 'bad.csv'
 		# Add writer and config to Projector
-		projector.visualize_embeddings(writer, config)
+		projector.visualize_embeddings(writer, config_good)
+		projector.visualize_embeddings(writer, config_bad)
 		# Save the model
-		saver_embed = tf.train.Saver([embedding_var])
+		saver_embed = tf.train.Saver([embedding_var_good, embedding_var_bad])
 		saver_embed.save(sess, LOG_DIR + 'embedding_test.ckpt', 1)
 
 		writer.close()
@@ -303,7 +317,6 @@ def main():
 			# if solution is not found iterate a new population from previous ranked population
 			chromos = []
 			chromos = iteratePop(rankedPop)
-				
 			iterations += 1
 		else:
 			break
