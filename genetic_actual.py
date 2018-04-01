@@ -8,6 +8,7 @@ from keras.models import Sequential
 from keras.layers import Dense
 from keras import metrics
 import pandas as pd
+from keras import backend as K
 
 neurons = 0
 hidden_layers = 0
@@ -80,11 +81,12 @@ def neural_net(neurons, layers, string, activation):
         for i in range(layers):
             eval(string)
         model.add(Dense(units=1))
-    model.compile(loss=keras.losses.mean_squared_error, optimizer= str(activation), metrics=['accuracy'] )
-    model.fit(train_X, train_Y, epochs=1, validation_data=(valid_X, valid_Y))
+    model.compile(loss=keras.losses.mean_squared_error, optimizer= str(activation), metrics=['accuracy', metrics.binary_accuracy] )
+    hist = model.fit(train_X, train_Y, epochs=1, validation_data=(valid_X, valid_Y))
     actual_layers = layers + 2
     actual_neurons = neurons + 33
-    l = list((actual_layers, layers, actual_neurons, activation, model.optimizer.lr, model.metrics[0]))
+    # print(hist.history['val_acc'])
+    l = list((actual_layers, layers, actual_neurons, activation, K.eval(model.optimizer.lr), hist.history['val_acc'][0]))
     return l
 
 

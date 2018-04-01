@@ -1,101 +1,101 @@
 actual_layers,layers,neurons,optimizers,learning rate,accuracy
-9,7,48,sgd,<tf.Variable 'SGD/lr:0' shape=() dtype=float32_ref>,accuracy
-4,2,97,sgd,<tf.Variable 'SGD_1/lr:0' shape=() dtype=float32_ref>,accuracy
-7,5,21,adam,<tf.Variable 'Adam/lr:0' shape=() dtype=float32_ref>,accuracy
-5,3,58,RMSprop,<tf.Variable 'RMSprop/lr:0' shape=() dtype=float32_ref>,accuracy
-4,2,47,adam,<tf.Variable 'Adam_1/lr:0' shape=() dtype=float32_ref>,accuracy
-10,8,39,Adadelta,<tf.Variable 'Adadelta/lr:0' shape=() dtype=float32_ref>,accuracy
-5,3,14,RMSprop,<tf.Variable 'RMSprop_1/lr:0' shape=() dtype=float32_ref>,accuracy
-8,6,83,RMSprop,<tf.Variable 'RMSprop_2/lr:0' shape=() dtype=float32_ref>,accuracy
-12,10,99,RMSprop,<tf.Variable 'RMSprop_3/lr:0' shape=() dtype=float32_ref>,accuracy
-5,3,38,sgd,<tf.Variable 'SGD_2/lr:0' shape=() dtype=float32_ref>,accuracy
-12,10,34,Adadelta,<tf.Variable 'Adadelta_1/lr:0' shape=() dtype=float32_ref>,accuracy
-9,7,55,Adagrad,<tf.Variable 'Adagrad/lr:0' shape=() dtype=float32_ref>,accuracy
-3,1,51,Adadelta,<tf.Variable 'Adadelta_2/lr:0' shape=() dtype=float32_ref>,accuracy
-3,1,36,sgd,<tf.Variable 'SGD_3/lr:0' shape=() dtype=float32_ref>,accuracy
-9,7,86,adam,<tf.Variable 'Adam_2/lr:0' shape=() dtype=float32_ref>,accuracy
-10,8,8,adam,<tf.Variable 'Adam_3/lr:0' shape=() dtype=float32_ref>,accuracy
-3,1,9,sgd,<tf.Variable 'SGD_4/lr:0' shape=() dtype=float32_ref>,accuracy
-11,9,7,Adagrad,<tf.Variable 'Adagrad_1/lr:0' shape=() dtype=float32_ref>,accuracy
-4,2,63,sgd,<tf.Variable 'SGD_5/lr:0' shape=() dtype=float32_ref>,accuracy
-4,2,39,sgd,<tf.Variable 'SGD_6/lr:0' shape=() dtype=float32_ref>,accuracy
-11,9,71,Adadelta,<tf.Variable 'Adadelta_3/lr:0' shape=() dtype=float32_ref>,accuracy
-11,9,61,sgd,<tf.Variable 'SGD_7/lr:0' shape=() dtype=float32_ref>,accuracy
-8,6,39,adam,<tf.Variable 'Adam_4/lr:0' shape=() dtype=float32_ref>,accuracy
-7,5,34,Adadelta,<tf.Variable 'Adadelta_4/lr:0' shape=() dtype=float32_ref>,accuracy
-6,4,51,Adagrad,<tf.Variable 'Adagrad_2/lr:0' shape=() dtype=float32_ref>,accuracy
-11,9,52,Adagrad,<tf.Variable 'Adagrad_3/lr:0' shape=() dtype=float32_ref>,accuracy
-6,4,54,RMSprop,<tf.Variable 'RMSprop_4/lr:0' shape=() dtype=float32_ref>,accuracy
-5,3,62,adam,<tf.Variable 'Adam_5/lr:0' shape=() dtype=float32_ref>,accuracy
-4,2,23,adam,<tf.Variable 'Adam_6/lr:0' shape=() dtype=float32_ref>,accuracy
-10,8,25,Adadelta,<tf.Variable 'Adadelta_5/lr:0' shape=() dtype=float32_ref>,accuracy
-5,3,34,Adadelta,<tf.Variable 'Adadelta_6/lr:0' shape=() dtype=float32_ref>,accuracy
-12,10,74,RMSprop,<tf.Variable 'RMSprop_5/lr:0' shape=() dtype=float32_ref>,accuracy
-4,2,90,sgd,<tf.Variable 'SGD_8/lr:0' shape=() dtype=float32_ref>,accuracy
-9,7,13,adam,<tf.Variable 'Adam_7/lr:0' shape=() dtype=float32_ref>,accuracy
-12,10,68,sgd,<tf.Variable 'SGD_9/lr:0' shape=() dtype=float32_ref>,accuracy
-7,5,30,adam,<tf.Variable 'Adam_8/lr:0' shape=() dtype=float32_ref>,accuracy
-6,4,72,RMSprop,<tf.Variable 'RMSprop_6/lr:0' shape=() dtype=float32_ref>,accuracy
-10,8,60,sgd,<tf.Variable 'SGD_10/lr:0' shape=() dtype=float32_ref>,accuracy
-3,1,1,Adagrad,<tf.Variable 'Adagrad_4/lr:0' shape=() dtype=float32_ref>,accuracy
-4,2,7,adam,<tf.Variable 'Adam_9/lr:0' shape=() dtype=float32_ref>,accuracy
-4,2,97,Adagrad,<tf.Variable 'Adagrad_5/lr:0' shape=() dtype=float32_ref>,accuracy
-12,10,12,sgd,<tf.Variable 'SGD_11/lr:0' shape=() dtype=float32_ref>,accuracy
-4,2,49,adam,<tf.Variable 'Adam_10/lr:0' shape=() dtype=float32_ref>,accuracy
-6,4,70,Adadelta,<tf.Variable 'Adadelta_7/lr:0' shape=() dtype=float32_ref>,accuracy
-5,3,24,RMSprop,<tf.Variable 'RMSprop_7/lr:0' shape=() dtype=float32_ref>,accuracy
-6,4,58,Adagrad,<tf.Variable 'Adagrad_6/lr:0' shape=() dtype=float32_ref>,accuracy
-11,9,62,adam,<tf.Variable 'Adam_11/lr:0' shape=() dtype=float32_ref>,accuracy
-10,8,19,adam,<tf.Variable 'Adam_12/lr:0' shape=() dtype=float32_ref>,accuracy
-8,6,47,RMSprop,<tf.Variable 'RMSprop_8/lr:0' shape=() dtype=float32_ref>,accuracy
-8,6,45,Adagrad,<tf.Variable 'Adagrad_7/lr:0' shape=() dtype=float32_ref>,accuracy
-8,6,93,adam,<tf.Variable 'Adam_13/lr:0' shape=() dtype=float32_ref>,accuracy
-10,8,48,RMSprop,<tf.Variable 'RMSprop_9/lr:0' shape=() dtype=float32_ref>,accuracy
-6,4,7,Adagrad,<tf.Variable 'Adagrad_8/lr:0' shape=() dtype=float32_ref>,accuracy
-6,4,60,RMSprop,<tf.Variable 'RMSprop_10/lr:0' shape=() dtype=float32_ref>,accuracy
-9,7,19,RMSprop,<tf.Variable 'RMSprop_11/lr:0' shape=() dtype=float32_ref>,accuracy
-10,8,81,Adadelta,<tf.Variable 'Adadelta_8/lr:0' shape=() dtype=float32_ref>,accuracy
-8,6,12,adam,<tf.Variable 'Adam_14/lr:0' shape=() dtype=float32_ref>,accuracy
-5,3,99,Adadelta,<tf.Variable 'Adadelta_9/lr:0' shape=() dtype=float32_ref>,accuracy
-11,9,92,sgd,<tf.Variable 'SGD_12/lr:0' shape=() dtype=float32_ref>,accuracy
-10,8,13,sgd,<tf.Variable 'SGD_13/lr:0' shape=() dtype=float32_ref>,accuracy
-8,6,25,Adagrad,<tf.Variable 'Adagrad_9/lr:0' shape=() dtype=float32_ref>,accuracy
-3,1,2,Adagrad,<tf.Variable 'Adagrad_10/lr:0' shape=() dtype=float32_ref>,accuracy
-3,1,13,sgd,<tf.Variable 'SGD_14/lr:0' shape=() dtype=float32_ref>,accuracy
-7,5,25,sgd,<tf.Variable 'SGD_15/lr:0' shape=() dtype=float32_ref>,accuracy
-12,10,18,Adagrad,<tf.Variable 'Adagrad_11/lr:0' shape=() dtype=float32_ref>,accuracy
-5,3,57,Adagrad,<tf.Variable 'Adagrad_12/lr:0' shape=() dtype=float32_ref>,accuracy
-11,9,17,RMSprop,<tf.Variable 'RMSprop_12/lr:0' shape=() dtype=float32_ref>,accuracy
-12,10,87,Adadelta,<tf.Variable 'Adadelta_10/lr:0' shape=() dtype=float32_ref>,accuracy
-4,2,11,Adagrad,<tf.Variable 'Adagrad_13/lr:0' shape=() dtype=float32_ref>,accuracy
-4,2,50,Adagrad,<tf.Variable 'Adagrad_14/lr:0' shape=() dtype=float32_ref>,accuracy
-8,6,14,RMSprop,<tf.Variable 'RMSprop_13/lr:0' shape=() dtype=float32_ref>,accuracy
-11,9,95,RMSprop,<tf.Variable 'RMSprop_14/lr:0' shape=() dtype=float32_ref>,accuracy
-9,7,61,Adagrad,<tf.Variable 'Adagrad_15/lr:0' shape=() dtype=float32_ref>,accuracy
-11,9,60,Adadelta,<tf.Variable 'Adadelta_11/lr:0' shape=() dtype=float32_ref>,accuracy
-9,7,16,Adadelta,<tf.Variable 'Adadelta_12/lr:0' shape=() dtype=float32_ref>,accuracy
-4,2,62,sgd,<tf.Variable 'SGD_16/lr:0' shape=() dtype=float32_ref>,accuracy
-9,7,12,Adagrad,<tf.Variable 'Adagrad_16/lr:0' shape=() dtype=float32_ref>,accuracy
-4,2,38,sgd,<tf.Variable 'SGD_17/lr:0' shape=() dtype=float32_ref>,accuracy
-10,8,56,sgd,<tf.Variable 'SGD_18/lr:0' shape=() dtype=float32_ref>,accuracy
-7,5,39,adam,<tf.Variable 'Adam_15/lr:0' shape=() dtype=float32_ref>,accuracy
-8,6,80,Adagrad,<tf.Variable 'Adagrad_17/lr:0' shape=() dtype=float32_ref>,accuracy
-8,6,20,sgd,<tf.Variable 'SGD_19/lr:0' shape=() dtype=float32_ref>,accuracy
-8,6,24,Adadelta,<tf.Variable 'Adadelta_13/lr:0' shape=() dtype=float32_ref>,accuracy
-6,4,70,Adadelta,<tf.Variable 'Adadelta_14/lr:0' shape=() dtype=float32_ref>,accuracy
-8,6,73,Adadelta,<tf.Variable 'Adadelta_15/lr:0' shape=() dtype=float32_ref>,accuracy
-6,4,80,sgd,<tf.Variable 'SGD_20/lr:0' shape=() dtype=float32_ref>,accuracy
-4,2,51,sgd,<tf.Variable 'SGD_21/lr:0' shape=() dtype=float32_ref>,accuracy
-11,9,4,Adadelta,<tf.Variable 'Adadelta_16/lr:0' shape=() dtype=float32_ref>,accuracy
-4,2,94,sgd,<tf.Variable 'SGD_22/lr:0' shape=() dtype=float32_ref>,accuracy
-11,9,97,Adadelta,<tf.Variable 'Adadelta_17/lr:0' shape=() dtype=float32_ref>,accuracy
-5,3,15,Adagrad,<tf.Variable 'Adagrad_18/lr:0' shape=() dtype=float32_ref>,accuracy
-3,1,59,Adagrad,<tf.Variable 'Adagrad_19/lr:0' shape=() dtype=float32_ref>,accuracy
-12,10,90,RMSprop,<tf.Variable 'RMSprop_15/lr:0' shape=() dtype=float32_ref>,accuracy
-3,1,37,RMSprop,<tf.Variable 'RMSprop_16/lr:0' shape=() dtype=float32_ref>,accuracy
-10,8,29,RMSprop,<tf.Variable 'RMSprop_17/lr:0' shape=() dtype=float32_ref>,accuracy
-4,2,85,Adadelta,<tf.Variable 'Adadelta_18/lr:0' shape=() dtype=float32_ref>,accuracy
-6,4,74,Adagrad,<tf.Variable 'Adagrad_20/lr:0' shape=() dtype=float32_ref>,accuracy
-12,10,33,sgd,<tf.Variable 'SGD_23/lr:0' shape=() dtype=float32_ref>,accuracy
-5,3,76,RMSprop,<tf.Variable 'RMSprop_18/lr:0' shape=() dtype=float32_ref>,accuracy
-9,7,31,adam,<tf.Variable 'Adam_16/lr:0' shape=() dtype=float32_ref>,accuracy
+6,4,123,adam,0.0010000000474974513,0.43778801623577346
+12,10,35,sgd,0.009999999776482582,0.059907834101382486
+6,4,92,Adadelta,1.0,0.8387096793420853
+10,8,42,adam,0.0010000000474974513,0.013824884792626729
+3,1,112,adam,0.0010000000474974513,0.12903225840786087
+11,9,52,sgd,0.009999999776482582,0.059907834101382486
+8,6,66,adam,0.0010000000474974513,0.2580645153050049
+11,9,48,Adadelta,1.0,0.0
+5,3,126,RMSprop,0.0010000000474974513,0.5944700449842462
+7,5,100,Adagrad,0.009999999776482582,0.8801843312478834
+3,1,45,adam,0.0010000000474974513,0.004608294930875576
+5,3,125,sgd,0.009999999776482582,0.0
+5,3,105,sgd,0.009999999776482582,0.0
+8,6,37,adam,0.0010000000474974513,0.0
+4,2,85,Adadelta,1.0,0.8064516123538742
+4,2,42,Adagrad,0.009999999776482582,0.23502304216134384
+3,1,107,Adadelta,1.0,0.8248847920773765
+3,1,128,Adagrad,0.009999999776482582,0.8387096743979212
+11,9,113,RMSprop,0.0010000000474974513,0.013824884792626729
+10,8,103,Adagrad,0.009999999776482582,0.8387096743979212
+3,1,100,Adagrad,0.009999999776482582,0.7188940061951563
+8,6,61,RMSprop,0.0010000000474974513,0.8110599072847499
+11,9,54,Adagrad,0.009999999776482582,0.5898617514267496
+3,1,54,RMSprop,0.0010000000474974513,0.0
+5,3,102,Adadelta,1.0,0.9078341008331369
+3,1,57,adam,0.0010000000474974513,0.12442396272162688
+9,7,119,Adagrad,0.009999999776482582,0.9216589880978456
+10,8,112,sgd,0.009999999776482582,0.0
+8,6,68,Adadelta,1.0,0.21658986092712473
+5,3,107,Adadelta,1.0,0.9769585253456221
+9,7,118,sgd,0.009999999776482582,0.0
+8,6,116,sgd,0.009999999776482582,0.0
+5,3,34,adam,0.0010000000474974513,0.0
+10,8,38,RMSprop,0.0010000000474974513,0.0
+10,8,62,Adagrad,0.009999999776482582,0.6589861759392347
+5,3,51,Adadelta,1.0,0.7465437777031402
+3,1,83,Adadelta,1.0,0.7926267275612475
+4,2,49,adam,0.0010000000474974513,0.07834101351587454
+4,2,133,Adadelta,1.0,1.0
+9,7,128,RMSprop,0.0010000000474974513,0.0
+7,5,37,Adadelta,1.0,0.7188940105899688
+6,4,71,RMSprop,0.0010000000474974513,0.49769585033715597
+12,10,58,Adagrad,0.009999999776482582,0.5207373269142643
+6,4,49,sgd,0.009999999776482582,0.0
+7,5,86,adam,0.0010000000474974513,0.465437790765191
+9,7,45,sgd,0.009999999776482582,0.0
+10,8,115,sgd,0.009999999776482582,0.0
+8,6,36,sgd,0.009999999776482582,0.02304147465437788
+3,1,90,adam,0.0010000000474974513,0.004608294930875576
+6,4,74,Adagrad,0.009999999776482582,0.9308755735647843
+4,2,75,RMSprop,0.0010000000474974513,0.5483870951261388
+10,8,125,Adadelta,1.0,0.20737327158039068
+11,9,128,RMSprop,0.0010000000474974513,0.004608294930875576
+10,8,60,RMSprop,0.0010000000474974513,0.4700460807519025
+11,9,38,sgd,0.009999999776482582,0.059907834101382486
+7,5,46,Adadelta,1.0,0.5898617500533706
+6,4,112,Adagrad,0.009999999776482582,0.6129032247077485
+4,2,128,Adadelta,1.0,0.9354838684956599
+8,6,56,adam,0.0010000000474974513,0.16589861689350022
+11,9,34,Adagrad,0.009999999776482582,0.0
+8,6,71,adam,0.0010000000474974513,0.06451612892925465
+11,9,66,adam,0.0010000000474974513,0.2073732735374556
+10,8,69,Adagrad,0.009999999776482582,0.6958525329141573
+12,10,56,Adagrad,0.009999999776482582,0.8064516098817922
+12,10,72,RMSprop,0.0010000000474974513,0.0
+9,7,40,Adadelta,1.0,0.07834101361887795
+3,1,58,adam,0.0010000000474974513,0.0
+3,1,54,Adadelta,1.0,0.37327188816488066
+7,5,107,RMSprop,0.0010000000474974513,0.5161290325327403
+7,5,71,Adadelta,1.0,0.8525345635853605
+5,3,88,Adagrad,0.009999999776482582,0.9953917050691244
+9,7,42,sgd,0.009999999776482582,0.04608294899974551
+4,2,75,RMSprop,0.0010000000474974513,0.28571428509626523
+12,10,83,Adagrad,0.009999999776482582,0.5253456204717609
+6,4,86,RMSprop,0.0010000000474974513,0.8202765009919619
+4,2,43,sgd,0.009999999776482582,0.05990783399837907
+6,4,71,sgd,0.009999999776482582,0.0
+8,6,39,adam,0.0010000000474974513,0.0
+6,4,45,Adagrad,0.009999999776482582,0.35023041639459845
+9,7,54,adam,0.0010000000474974513,0.03225806451612903
+11,9,44,RMSprop,0.0010000000474974513,0.1889400915478781
+3,1,77,Adagrad,0.009999999776482582,0.737327190313471
+4,2,108,RMSprop,0.0010000000474974513,0.6820276511429642
+11,9,105,Adadelta,1.0,0.0
+8,6,54,Adagrad,0.009999999776482582,0.9631336405529954
+6,4,122,Adadelta,1.0,0.5253456199224094
+9,7,87,RMSprop,0.0010000000474974513,0.3271889402295038
+11,9,56,RMSprop,0.0010000000474974513,0.13364055258337804
+4,2,65,Adadelta,1.0,0.7557603656421609
+6,4,34,Adadelta,1.0,0.0
+9,7,111,adam,0.0010000000474974513,0.6359447037569389
+5,3,63,sgd,0.009999999776482582,0.0
+11,9,107,RMSprop,0.0010000000474974513,0.03225806441312561
+5,3,125,RMSprop,0.0010000000474974513,0.17511520771661662
+4,2,120,sgd,0.009999999776482582,0.0
+12,10,46,Adadelta,1.0,0.013824884792626729
+10,8,55,adam,0.0010000000474974513,0.13364055258337804
+5,3,87,adam,0.0010000000474974513,0.2811059911267549
+3,1,77,RMSprop,0.0010000000474974513,0.17511520751060977
+5,3,95,sgd,0.009999999776482582,0.0
