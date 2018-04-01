@@ -13,7 +13,7 @@ print(npdata)
 X = npdata[:,[0,1,2,4]].astype(np.float)
 Y = npdata[:,5].astype(np.float)
 optimizers = []
-optimizers.extend(npdata[:,4])
+optimizers.extend(npdata[:,3])
 print(X)
 print(Y)
 # Find the optimal plane
