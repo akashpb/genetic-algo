@@ -2,17 +2,25 @@ import csv
 import matplotlib.pyplot as plt
 import numpy as np
 from sklearn import svm
+import keras.utils
 
 
 data = csv.reader(open('hyperparameters.csv'))
-#print(list(data))
-npdata = np.array(list(data))
-X = npdata[:,:2].astype(np.float)
-Y = npdata[:,2].astype(np.float)
-
+dataList = list(data)
+dataList = dataList[1:]
+npdata = np.array(dataList)
+print(npdata)
+X = npdata[:,[0,1,2,4]].astype(np.float)
+Y = npdata[:,5].astype(np.float)
+optimizers = []
+optimizers.extend(npdata[:,4])
+print(X)
+print(Y)
 # Find the optimal plane
 # 
-clf = svm.SVC(kernel = 'gaussian')
+optimizers_one_hot = keras.utils.to_categorical(optimizers)
+clf = svm.SVC(kernel = 'rbf')
+X = np.column_stack((X,optimizers_one_hot))
 
 #Find the plane
 clf.fit(X, Y)
