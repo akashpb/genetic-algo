@@ -16,10 +16,6 @@ Y = npdata[:,5].astype(np.float)
 optimizers = []
 optimizers.extend(npdata[:,3])
 
-train_X = X[:int(len(X)*train)]
-train_Y = Y[:int(len(Y)*train)]
-valid_X = X[int(len(X)*train):]
-valid_Y = Y[int(len(Y)*train):]
 #print(X)
 #print(Y)
 # Find the optimal plan
@@ -40,6 +36,10 @@ for i in range(len(Y)):
     elif(Y[i] >= 0.5):
         Y[i] = 1
 
+train_X = X[:int(len(X)*train)]
+train_Y = Y[:int(len(Y)*train)]
+valid_X = X[int(len(X)*train):]
+valid_Y = Y[int(len(Y)*train):]
 #Find the plane
 clf.fit(train_X, train_Y)
 
