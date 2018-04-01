@@ -44,18 +44,18 @@ valid_Y = Y[int(len(Y)*train):]
 clf.fit(train_X, train_Y)
 
 # You get an array of weights
-W = clf.coef_[0]
+# W = clf.coef_[0]
 
-bias = clf.intercept_[0]
+# bias = clf.intercept_[0]
 
-xx = np.linspace(0,12)
-yy = -bias/W[1] - xx*W[0]/W[1]
+# xx = np.linspace(0,12)
+# yy = -bias/W[1] - xx*W[0]/W[1]
 
-for i in range(len(X)):
-    if(Y[i] == 1):
-        plt.plot(X[i,0], X[i,1], 'b+', label = "POS")
-    else:
-        plt.plot(X[i,0], X[i,1], 'rx', label = "NEG")
+# for i in range(len(X)):
+#     if(Y[i] == 1):
+#         plt.plot(X[i,0], X[i,1], 'b+', label = "POS")
+#     else:
+#         plt.plot(X[i,0], X[i,1], 'rx', label = "NEG")
         
 #plt.legend()
 #plt.plot(-bias,+bias, color = "yellow")
@@ -64,5 +64,5 @@ for i in range(len(X)):
 acc = clf.score(valid_X, valid_Y)
 print(acc)
 #plt.plot(10, 5, color = "black")
-plt.plot(xx, yy, color = "red")
-plt.show()
+# plt.plot(xx, yy, color = "red")
+# plt.show()
