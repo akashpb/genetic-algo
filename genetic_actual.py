@@ -54,7 +54,7 @@ valid_X = X_train[2000:2217, :]
 valid_Y = Y_train[2000:2217]
 
 def random_generator():
-    for x in range(100):
+    for x in range(1000):
         neurons = random.randint(1,100)
         hidden_layers = random.randint(1, 10)
         i = random.randint(0,4)
@@ -76,15 +76,17 @@ def neural_net(neurons, layers, string, activation):
         model.add(Dense(units=32, activation='relu', input_shape=(3,)))
         eval(string)
         model.add(Dense(units=1))
+        actual_neurons = neurons + 33
     elif layers >= 2:
         model.add(Dense(units=32, activation='relu', input_shape=(3,)))
         for i in range(layers):
             eval(string)
         model.add(Dense(units=1))
+        actual_neurons = neurons*layers + 33
     model.compile(loss=keras.losses.mean_squared_error, optimizer= str(activation), metrics=['accuracy', metrics.binary_accuracy] )
     hist = model.fit(train_X, train_Y, epochs=1, validation_data=(valid_X, valid_Y))
     actual_layers = layers + 2
-    actual_neurons = neurons + 33
+    
     # print(hist.history['val_acc'])
     l = list((actual_layers, layers, actual_neurons, activation, K.eval(model.optimizer.lr), hist.history['val_acc'][0]))
     return l
