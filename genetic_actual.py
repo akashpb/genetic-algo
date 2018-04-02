@@ -54,7 +54,7 @@ valid_X = X_train[2000:2217, :]
 valid_Y = Y_train[2000:2217]
 
 def random_generator():
-    for x in range(100):
+    for x in range(1000):
         neurons = random.randint(1,100)
         hidden_layers = random.randint(1, 10)
         i = random.randint(0,4)
