@@ -1,6 +1,9 @@
 import csv
 import matplotlib.pyplot as plt
 import numpy as np
+import keras
+from keras.models import Sequential
+from keras.layers import Dense 
 from sklearn import svm
 from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import LabelEncoder
@@ -9,7 +12,7 @@ data = csv.reader(open('hyperparameters.csv'))
 dataList = list(data)
 dataList = dataList[1:]
 npdata = np.array(dataList)
-train = 0.7
+train = 0.9
 #print(npdata)
 X = npdata[:,[0,1,2,4]].astype(np.float)
 Y = npdata[:,5].astype(np.float)
@@ -31,9 +34,9 @@ clf = svm.SVC(kernel = 'linear')
 X = np.column_stack((X,optimizers_one_hot))
 
 for i in range(len(Y)):
-    if(Y[i] < 0.5):
+    if(Y[i] < 0.7):
         Y[i] = 0
-    elif(Y[i] >= 0.5):
+    elif(Y[i] >= 0.7):
         Y[i] = 1
 
 train_X = X[:int(len(X)*train)]
@@ -43,6 +46,20 @@ valid_Y = Y[int(len(Y)*train):]
 #Find the plane
 clf.fit(train_X, train_Y)
 
+
+model = Sequential()
+
+model.add(Dense(units = 36, activation='relu', input_shape=(9,)))
+#Add two hidden layers
+model.add(Dense(32, activation='relu'))
+model.add(Dense(32, activation='relu'))
+
+model.add(Dense(units=2, activation='softmax'))
+
+#Compile the learning process
+model.compile(loss = 'sparse_categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
+
+model.fit(train_X, train_Y, epochs=250)
 # You get an array of weights
 # W = clf.coef_[0]
 
@@ -62,7 +79,7 @@ clf.fit(train_X, train_Y)
 # t = clf.predict([[10,5]])
 
 acc = clf.score(valid_X, valid_Y)
-print(acc)
+print("SVM accuracy is:", acc)
 #plt.plot(10, 5, color = "black")
 # plt.plot(xx, yy, color = "red")
 # plt.show()
